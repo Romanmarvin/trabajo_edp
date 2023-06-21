@@ -1,5 +1,8 @@
 #!/bin/bash
 
+
+
+
 mostrar_menu() {
     echo "1. Generar"
     echo "2. Descargar"
@@ -7,27 +10,22 @@ mostrar_menu() {
     echo "4. Comprimir"
     echo "5. Salir"
 }
-
 ejecutar_generar() {
     echo "Ejecutando el script de generación..."
       ~/trabajo_practico/generar.sh
 }
-
 ejecutar_descargar() {
     echo "Ejecutando el script de descarga..."
     ~/trabajo_practico/descargar.sh
 }
-
 ejecutar_procesar() {
     echo "Ejecutando el script de procesamiento..."
     ~/trabajo_practico/procesar.sh
 }
-
 ejecutar_comprimir() {
     echo "Ejecutando el script de compresión..."
      ./comprimir.sh
 }
-
 while true; do
     mostrar_menu
     read -p "Selecciona una opción: " opcion

@@ -8,7 +8,7 @@ carpeta_salida="/home/marvin/Escritorio/Hugo/carpeta_salida"
 
 # Crear la carpeta de salida si no existe
 mkdir -p "$carpeta_salida"
-
+#esto leo 
 # Iterar sobre cada imagen en la carpeta de entrada
 for imagen_entrada in "$carpeta_entrada"/*.jpg; do
     # Obtener el nombre base de la imagen sin la extensión
