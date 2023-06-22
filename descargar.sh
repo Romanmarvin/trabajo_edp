@@ -7,7 +7,7 @@
 comment
 #aca tengo que cambiar la carperta de salida por la que voy a poner en el docker.
 
-carpeta_salida="/home/marvin/Escritorio/Hugo/"
+carpeta_salida="/trabajo_edp"
 comrpesion=$(basename "$carpeta")
 tar -czvf "$carpeta_salida.tar.gz" "$carpeta_salida"
 mv "$carpeta_salida.tar.gz" "$carpeta_salida/$compresion.tar.gz"

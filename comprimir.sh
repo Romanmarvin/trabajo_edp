@@ -7,8 +7,8 @@
     “a”. El archivo generado debe poder accederse fuera del contenedor."""!
 comment
 #aca tengo un problema porque las imagenes tienen que estar donde este este script
-# de esto se ocupa el hugo del futuro
-imagenes=$(ls *.jpg)
+# de esto se ocupa el hugo del futuro , despues del jpg /directorio de las imagenes 
+imagenes=$(ls *.jpg )
 echo "$imagenes"> lista_de_nombres.txt
 femeninas=0
 masculinos=0
@@ -22,4 +22,5 @@ done <lista_de_nombres.txt
 echo "total de fotos femeninas : $femeninas"> lista_de nombres.txt
 echo "total de fotos masculinas : $masculinas" >lista_de_nombres.txt
 
+#el archivo se tiene que mover a la carpeta de descarga
 #ayudaaaa como saco los archivos del contenedor!!! <3

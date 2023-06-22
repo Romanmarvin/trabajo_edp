@@ -1,10 +1,16 @@
 #!/bin/bash
+<<-comment
+Se deberán recortar las imágenes a una resolución de 512*512
+con alguna utilidad como imagemagick. Solamente deben procesarse aquellas imágenes que tengan nombres de personas. Entiéndase por nombres de
+personas a cualquier combinación de palabras que empiecen con mayúsculas
+y sigan por minúsculas.
+comment
 
 # Ruta de la carpeta que contiene las imágenes de entrada
-carpeta_entrada="/home/marvin/Escritorio/Hugo/"
-mkdir /home/marvin/Escritorio/Hugo/carpeta_salida
+carpeta_entrada="/trabajo_edp"
+mkdir /trabajo_edp/carpeta_salida
 # aca hay un problema la carpeta de salida tiene que ser creada dentro del docker
-carpeta_salida="/home/marvin/Escritorio/Hugo/carpeta_salida"
+carpeta_salida="/trabajo_edp/carpeta_salida"
 
 # Crear la carpeta de salida si no existe
 mkdir -p "$carpeta_salida"
