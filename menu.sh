@@ -12,11 +12,11 @@ mostrar_menu() {
 }
 ejecutar_generar() {
     echo "Ejecutando el script de generación..."
-      ~/trabajo_practico/generar.sh
+      /trabajo_edp/generar.sh
 }
 ejecutar_descargar() {
     echo "Ejecutando el script de descarga..."
-    ~/trabajo_practico/descargar.sh
+    ~/trabajo_edp/descargar.sh
 }
 ejecutar_procesar() {
     echo "Ejecutando el script de procesamiento..."

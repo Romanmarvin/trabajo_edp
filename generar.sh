@@ -1,5 +1,15 @@
 #!/bin/bash
 
+<<-comment
+Genera imágenes utilizando algún servicios web. Se debe
+poder indicar por argumento cuantas imagenes generar y se deben asignar
+nombres de archivo al azar de una lista de nombres de personas. Tener
+en cuenta que al descargar de una página conviene usar un sleep entre
+descarga y descarga para no saturar el servicio y evitar problemas. Luego
+se deben comprimir las imágenes, y generar un archivo con su suma de
+verificación.
+comment
+
 # Cantidad de imágenes a descargar (ingresada por el usuario)
 echo "Ingrese la cantidad de imágenes a descargar:"
 read cantidad_imagenes
@@ -7,7 +17,7 @@ read cantidad_imagenes
 # dos obciones o descargo el archivo o lo meto en el repositorio directo
 csv_file=0
 # Ruta del directorio , aca nose si crear un nuevo directorio o se pone el directorio de docker
-directorio_destino="/home/marvin/Escritorio/Hugo"
+directorio_destino="/trabajo_edp"
 base_url="https://source.unsplash.com/random/900%C3%97700/?person"
 wget "https://raw.githubusercontent.com/fernandezpablo85/name_suggestions/master/assets/dict.csv" -O "$csv_file"
 mapfile -t nombres < "$csv_file"
