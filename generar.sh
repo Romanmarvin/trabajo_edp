@@ -2,7 +2,7 @@
 echo "Ingrese la cantidad de imágenes a descargar:"
 read -r cantidad_imagenes
 csv_file=0
-directorio_destino="/home/marvin"
+directorio_destino="/trabajo_edp"
 base_url="https://source.unsplash.com/random/900%C3%97700/?person"
 # Descargar el archivo CSV con los nombres
 wget -O "$directorio_destino/$csv_file" "https://raw.githubusercontent.com/adalessandro/EdP-2023-TP-Final/main/dict.csv"
