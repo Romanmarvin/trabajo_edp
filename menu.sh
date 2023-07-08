@@ -9,19 +9,19 @@ mostrar_menu() {
 }
 ejecutar_generar() {
     echo "Ejecutando el script de generación..."
-  /home/marvin/trabajo_practico/generar.sh
+  /trabajo_edp/generar.sh
 }
 ejecutar_descargar() {
     echo "Ejecutando el script de descarga..."
-  /home/marvin/trabajo_practico/descomprimir.sh
+  /trabajo_edp/descomprimir.sh
 }
 ejecutar_procesar() {
     echo "Ejecutando el script de procesamiento..."
-  /home/marvin/trabajo_practico/procesar.sh
+  /trabajo_edp/procesar.sh
 }
 ejecutar_comprimir() {
     echo "Ejecutando el script de compresión..."
-  /home/marvin/trabajo_practico/comprimir.sh
+  /trabajo_edp/comprimir.sh
 }
 while true; do
     mostrar_menu
