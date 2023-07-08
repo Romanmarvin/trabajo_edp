@@ -1,8 +1,8 @@
 #!/bin/bash
 #direccion donde esta el .tar
-imagenes="/home/marvin/trabajo_practico/imagenes.tar.gz"
+imagenes="/trabajo_edp/imagenes.tar.gz"
 #direccion del txt
-sum="/home/marvin/trabajo_practico/suma.txt"
+sum="/trabajo_edp/suma.txt"
 #descomprimir , con -c cambiar al directorio final 
 tar -xzvf "$imagenes" 
 carpeta_imagenes =$(tar -tzf "$imagenes"| head -1 | xargs dirname)
