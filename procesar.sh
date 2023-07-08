@@ -1,5 +1,5 @@
 #!/bin/bash
-directorio="/home/marvin/trabajo_practico"
+directorio="/trabajo_edp"
 
 # Función para verificar si un nombre de archivo cumple con el filtro
 verificar_filtro() {
