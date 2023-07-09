@@ -2,8 +2,8 @@
 imagenes=$(ls *.jpg )
 echo "$imagenes"> imagenes.txt
 
-archivo="/home/marvin/trabajo_practico/imagenes.txt"
-salida="/home/marvin/trabajo_practico/femeninas.txt"
+archivo="/trabajo_edp/imagenes.txt"
+salida="/trabajo_edp/femeninas.txt"
 while IFS= read -r linea; do
     palabras=($linea)
         
@@ -26,7 +26,7 @@ done < "$archivo"
 
 #echo "Proceso completado $salida"
 
-carp="/home/marvin/trabajo_practico"
+carp="/trabajo_edp"
 
 find "$carp" -type f ! -name "*.sh" -exec tar -czvf archivos.tar.gz {} +
 
