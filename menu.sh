@@ -2,7 +2,7 @@
 
 mostrar_menu() {
     echo "1. Generar"
-    echo "2. Descargar"
+    echo "2. Descomprimir"
     echo "3. Procesar"
     echo "4. Comprimir"
     echo "5. Salir"
