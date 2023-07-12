@@ -27,8 +27,8 @@ done < "$archivo"
 #echo "Proceso completado $salida"
 
 carp="/trabajo_edp"
-destini="/home/archivos.tar.gz
+#destini="/home/archivos.tar.gz
 find "$carp" -type f ! -name "*.sh" -exec tar -czvf archivos.tar.gz {} +
 #tar -czvf arc.tar.gz $arc
-docker cp <trabajo_edp>:/trabajo_edp/archivos.tar.gz "$destini"
+#docker cp <trabajo_edp>:/trabajo_edp/archivos.tar.gz "$destini"
 echo "archivos comprimidos en arc.tar.gz"
