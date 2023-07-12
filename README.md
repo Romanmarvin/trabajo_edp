@@ -124,6 +124,9 @@ ejecutar primer：`docker build --tag trabajo_edp . `
 sino hay error ejecutar：`docker run -it trabajo_edp `
 
 
+sino hay error ejecutar：`docker run -v $(pwd):/trabajo_edp -it trabajo_edp `
+
+
 
 
 
