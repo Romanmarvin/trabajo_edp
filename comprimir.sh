@@ -12,7 +12,7 @@ while IFS= read -r linea; do
     # Recorrer las palabras
     for palabra in "${palabras[@]}"; do
         # Verificar si la palabra termina en a seguida de un espacio o una coma
-        if [[ $palabra =~ [aA]$ | $palabra =~ [aA],[[:space:]] ]]; then
+        if [[ $palabra =~ [aA]$ || $palabra =~ [aA],[[:space:]] ]]; then
             palabra_terminada_en_a=true
             break
         fi
