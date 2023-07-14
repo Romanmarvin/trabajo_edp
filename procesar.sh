@@ -1,6 +1,6 @@
 #!/bin/bash
 # Directorio de búsqueda
-directorio="/home/marvin/trabajo_practico"
+directorio="/trabajo_edp"
 #se usa el find buscar , el grep para filtrar  
 # find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' | while IFS= read -r archivo; do
 for archivo in $(find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+');do
