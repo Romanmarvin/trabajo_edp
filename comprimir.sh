@@ -25,10 +25,11 @@ while IFS= read -r linea; do
 done < "$archivo"
 
 #echo "Proceso completado $salida"
-
+mkdir "/trabajo_edp/arcchivos_comprimidos"
 carp="/trabajo_edp"
 #destini="/home/archivos.tar.gz
 find "$carp" -type f ! -name "*.sh" -exec tar -czvf archivos.tar.gz {} +
+mv -u archivos.tar.gz /trabajo_edp/arcchivos_comprimidos
 #tar -czvf arc.tar.gz $arc
 #docker cp <trabajo_edp>:/trabajo_edp/archivos.tar.gz "$destini"
 echo "archivos comprimidos en arc.tar.gz"
