@@ -5,13 +5,12 @@ imagenes="/trabajo_edp/imagenes.tar.gz"
 sum="/trabajo_edp/suma.txt"
 #descomprimir , con -c cambiar al directorio final 
 tar -xzvf "$imagenes" 
-carpeta_imagenes =$(tar -tzf "$imagenes"| head -1 | xargs dirname)
-
-md5sum "$carpeta_imagenes "/* > "$suma2"
-if cmp -s "$suma2" "$sum"; then
-    echo "la verificacion es igual"
-else 
-    echo "ocurrio un error"
+carpeta_imagenes =$(tar -tzf "$imagenes")
+if md5sum -c suma.txt | grep -q "OK"; them
+    echo "igualitos"
+else
+    echo "ocurrio un error" 
 fi 
+#RTFM 
 
-rm "$suma2"
+
