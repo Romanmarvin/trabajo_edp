@@ -2,7 +2,7 @@
 imagenes=$(ls *.jpg )
 echo "$imagenes"> imagenes.txt
 personas=$(ls.*,jpg)
-echo "$personas> personas.txt
+echo "$personas > personas.txt
 
 archivo="/trabajo_edp/imagenes.txt"
 salida="/trabajo_edp/femeninas.txt"
