@@ -121,11 +121,7 @@ utilizarse el comando:
 
 ejecutar primer：`docker build --tag trabajo_edp . `
 
-sino hay error ejecutar：`docker run -it trabajo_edp `
-
-
-sino hay error ejecutar：`docker run -v $(pwd):/trabajo_edp/archivos.tar.gz -it trabajo_edp `
-
+sino hay error ejecutar：`docker run -v $(pwd):/trabajo_edp/arcchivos_comprimidos -it trabajo_edp `
 
 
 
