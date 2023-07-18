@@ -1,8 +1,15 @@
 #!/bin/bash
+if ! find "$directorio" -type f -name "*.jpg" -print -quit; then
+  echo "No hay imágenes en el directorio. Genera las imágenes primero."
+  exit 1
+fi
+
 imagenes=$(ls *.jpg )
 echo "$imagenes"> imagenes.txt
-personas=$(ls *,jpg)
-echo "$personas"> personas.txt
+#personas=$(ls *,jpg )
+#echo "$personas"> personas.txt
+
+find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' archivo > personas.txt
 
 archivo="/trabajo_edp/imagenes.txt"
 salida="/trabajo_edp/femeninas.txt"
@@ -32,6 +39,5 @@ carp="/trabajo_edp"
 #destini="/home/archivos.tar.gz
 find "$carp" -type f ! -name "*.sh" -exec tar -czvf archivos.tar.gz {} +
 mv -u archivos.tar.gz /trabajo_edp/arcchivos_comprimidos
-#tar -czvf arc.tar.gz $arc
-#docker cp <trabajo_edp>:/trabajo_edp/archivos.tar.gz "$destini"
+
 echo "archivos comprimidos en arc.tar.gz"
