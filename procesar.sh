@@ -2,8 +2,7 @@
 # Directorio de búsqueda
 directorio="/trabajo_edp"
 #se usa el find buscar , el grep para filtrar  
-# find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' | while IFS= read -r archivo; do
-for archivo in $(find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+');do
+find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' | while IFS= read -r archivo; do
     # Obtener la ruta completa del archivo
     ruta_archivo=$(dirname "$archivo")
     nombre=$(basename "$archivo")
