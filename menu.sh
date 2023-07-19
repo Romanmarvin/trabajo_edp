@@ -10,37 +10,18 @@ mostrar_menu() {
 ejecutar_generar() {
     echo "Ejecutando el script de generación..."
   /trabajo_edp/generar.sh
-   #Marcar la opción 1 como verdadera
-    generado=true
 }
 ejecutar_descargar() {
-# Verificar si la opción 1 ha sido seleccionada previamente
-    if [ "$generado" = false ]; then
-        echo "Debes seleccionar la opción 1 (Generar) antes de ejecutar la opción 2 (Descomprimir)."
-    else
-        echo "Ejecutando el script de descarga..."
-        /trabajo_edp/descomprimir.sh
-        # Marcar la opción 2 como verdadera
-        descargado=true
-    fi
+    echo "Ejecutando el script de descarga..."
+  /trabajo_edp/descomprimir.sh
 }
 ejecutar_procesar() {
-     # Verificar si la opción 2 ha sido seleccionada previamente
-    if [ "$descargado" = false ]; then
-        echo "Debes seleccionar la opción 2 (Descomprimir) antes de ejecutar la opción 3 (Procesar)."
-    else
-        echo "Ejecutando el script de procesamiento..."
-        /trabajo_edp/procesar.sh
-    fi
+    echo "Ejecutando el script de procesamiento..."
+  /trabajo_edp/procesar.sh
 }
 ejecutar_comprimir() {
-   # Verificar si la opción 2 ha sido seleccionada previamente
-    if [ "$descargado" = false ]; then
-        echo "Debes seleccionar la opción 2 (Descomprimir) antes de ejecutar la opción 4 (Comprimir)."
-    else
-        echo "Ejecutando el script de compresión..."
-        /trabajo_edp/comprimir.sh
-    fi
+    echo "Ejecutando el script de compresión..."
+  /trabajo_edp/comprimir.sh
 }
 while true; do
     mostrar_menu
