@@ -5,7 +5,7 @@ if find . -type f -name "*.jpg" -print -quit; then
   #personas=$(ls *,jpg )
   #echo "$personas"> personas.txt
 
-  find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' archivo > personas.txt
+  find . -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' archivo > personas.txt
 
   archivo="/trabajo_edp/imagenes.txt"
   salida="/trabajo_edp/femeninas.txt"
