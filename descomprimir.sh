@@ -1,5 +1,5 @@
 #!/bin/bash
-if find . -type f -name "*.tar.gz" -print -quit; then
+if ! find . -type f -name "*.tar.gz" -print -quit; then
     #direccion donde esta el .tar
     imagenes="/trabajo_edp/imagenes.tar.gz"
     #direccion del txt
