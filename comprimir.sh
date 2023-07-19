@@ -37,7 +37,6 @@ done < "$archivo"
 mkdir "/trabajo_edp/arcchivos_comprimidos"
 carp="/trabajo_edp"
 #destini="/home/archivos.tar.gz
-find "$carp" -type f ! -name "*.sh" -exec tar -czvf archivos.tar.gz {} +
+find "$carp" -maxdepth 1 -name "*.jpg" -o -name "*.txt" | tar -czvf archivos.tar.gz -T -
 mv -u archivos.tar.gz /trabajo_edp/arcchivos_comprimidos
-
 echo "archivos comprimidos en arc.tar.gz"
