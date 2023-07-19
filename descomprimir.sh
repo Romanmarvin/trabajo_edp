@@ -12,6 +12,7 @@ if find . -type f -name "*.tar.gz" -print -quit; then
     else
         echo "ocurrio un error" 
     fi 
+    rm imagenes.tar.gz
 else
   echo "Genera las imagenes primero!!"
 fi
