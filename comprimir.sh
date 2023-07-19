@@ -2,7 +2,7 @@
 if find . -type f -name "*.jpg" -print -quit; then
   imagenes=$(ls *.jpg )
   echo "$imagenes"> imagenes.txt
-  #personas=$(ls *,jpg )
+  #personas=$(ls *,.jpg )
   #echo "$personas"> personas.txt
 
   find . -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' archivo > personas.txt
