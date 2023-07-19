@@ -1,5 +1,5 @@
 #!/bin/bash
-if ! find "$directorio" -type f -name "*.jpg" -print -quit; then
+if ! find . -type f -name "*.jpg" -print -quit; then
   echo "No hay imágenes en el directorio. Genera las imágenes primero."
   exit 1
 fi
