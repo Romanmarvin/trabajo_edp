@@ -115,7 +115,7 @@ utilizarse el comando:
 
 <https://www.youtube.com/watch?v=CV_Uf3Dq-EU&t=2212s>
 
-
+<https://linux.die.net/man/>
 
 #### 🔧Codigo a ejecutar
 
