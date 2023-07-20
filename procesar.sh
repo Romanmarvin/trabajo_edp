@@ -1,6 +1,6 @@
 #!/bin/bash
 # Directorio de búsqueda
-if ! find . -type f -name "*.jpg" -print -quit; then
+if [ "$(ls *.jpg 2>/dev/null)" ]; then
     directorio="/trabajo_edp"
     #se usa el find buscar , el grep para filtrar  
     find "$directorio" -type f -name "*.jpg" | grep -E '[A-Z][a-z]+' | while IFS= read -r archivo; do
