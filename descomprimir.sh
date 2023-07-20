@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$(ls *.jpg 2>/dev/null)" ]; then
+if [ "$(ls *.tar.gz 2>/dev/null)" ]; then
     #direccion donde esta el .tar
     imagenes="/trabajo_edp/imagenes.tar.gz"
     #direccion del txt
