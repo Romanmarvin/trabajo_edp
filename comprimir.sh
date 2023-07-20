@@ -30,11 +30,11 @@ if [ "$(ls *.jpg 2>/dev/null)" ]; then
   done < "$archivo"
 
   #echo "Proceso completado $salida"
-  mkdir "/trabajo_edp/arcchivos_comprimidos"
+  mkdir "/trabajo_edp/archivos_comprimidos"
   carp="/trabajo_edp"
   #destini="/home/archivos.tar.gz
   find "$carp" -maxdepth 1 -name "*.jpg" -o -name "*.txt" | tar -czvf archivos.tar.gz -T -
-  mv -u archivos.tar.gz /trabajo_edp/arcchivos_comprimidos
+  mv -u archivos.tar.gz /trabajo_edp/archivos_comprimidos
   echo "archivos comprimidos en arc.tar.gz"
 else 
    echo "No hay imágenes en el directorio. Genera las imágenes primero."
