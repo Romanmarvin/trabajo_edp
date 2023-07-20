@@ -1,5 +1,5 @@
 #!/bin/bash
-if ! find . -type f -name "*.jpg" -print -quit; then
+if [ "$(ls *.jpg 2>/dev/null)" ]; then
   imagenes=$(ls *.jpg )
   echo "$imagenes"> imagenes.txt
   #personas=$(ls *,.jpg )
